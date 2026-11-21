@@ -15,7 +15,7 @@ untuk menandai, hint terbatas, timer per ronde, skor + bintang di akhir.
 ## Run
 
 ```sh
-node serve.ts   # mainkan game/ di http://localhost:8080
+node shots.mjs   # sajikan game/ lokal + ambil 4 screenshot nyata ke screenshots/
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
