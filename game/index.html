@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cari Bedanya — Pasar, Kebun &amp; Pelabuhan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="hud">
+    <div class="hud-title">🔍 Cari Bedanya</div>
+    <div class="hud-item" id="hud-round">Ronde 1/3 · Pasar Pagi</div>
+    <div class="hud-item" id="hud-found">Ditemukan 0/7</div>
+    <div class="hud-item" id="hud-score">Skor 0</div>
+    <div class="hud-item hud-time">
+      <span id="hud-time">02:30</span>
+      <span id="timer-bar"><span id="timer-fill"></span></span>
+    </div>
+    <div class="hud-item" id="hud-hints">Hint 3x</div>
+    <button id="btn-hint" type="button">💡 Hint (H)</button>
+    <button id="btn-mute" type="button">Suara: hidup (M)</button>
+    <button id="btn-restart" type="button">↻ Ulang (R)</button>
+  </header>
+  <main id="stage">
+    <canvas id="game" width="1280" height="640"></canvas>
+    <div id="overlay" class="hidden">
+      <div id="overlay-card">
+        <h1 id="overlay-title"></h1>
+        <p id="overlay-text"></p>
+        <button id="overlay-btn" type="button"></button>
+      </div>
+    </div>
+  </main>
+  <footer id="help">
+    Klik perbedaan di gambar A atau B · H = hint · R = ulang ronde · 1/2/3 = pilih ronde · M = suara
+  </footer>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

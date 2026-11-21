@@ -1,0 +1,140 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #2B2118;
+  color: #FFF6E8;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+#app {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+#hud {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background: #5A3A1A;
+}
+
+.hud-title {
+  font-size: 20px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.hud-item {
+  background: rgba(255, 246, 232, 0.14);
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hud-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#timer-bar {
+  display: inline-block;
+  width: 80px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#timer-fill {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #43AA5B;
+}
+
+#hud button {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #FFD93B;
+  color: #5A2D00;
+  white-space: nowrap;
+}
+
+#hud button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+#stage {
+  position: relative;
+  width: 1280px;
+  height: 640px;
+}
+
+#game {
+  display: block;
+  width: 1280px;
+  height: 640px;
+  cursor: crosshair;
+}
+
+#overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(43, 33, 24, 0.55);
+}
+
+#overlay.hidden {
+  display: none;
+}
+
+#overlay-card {
+  background: #FFF6E8;
+  color: #5A2D00;
+  border-radius: 16px;
+  padding: 28px 36px;
+  max-width: 560px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+#overlay-card h1 {
+  margin: 0 0 12px;
+  font-size: 30px;
+}
+
+#overlay-card p {
+  margin: 0 0 20px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+#overlay-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 26px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  background: #43AA5B;
+  color: #FFFFFF;
+}
+
+#help {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: rgba(255, 246, 232, 0.65);
+  text-align: center;
+}
